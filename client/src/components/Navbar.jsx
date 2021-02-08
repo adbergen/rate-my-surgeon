@@ -24,6 +24,40 @@ export default function Nav() {
         </NavLink>
       </NavMenu>
       <NavToggle onClick={toggleTheme}>Toggle theme</NavToggle>
+      <NavLink
+              as={RouterNavLink}
+              to="/login"
+              exact
+              activeClassName="router-link-exact-active"
+              style={{
+                width: "140px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px",
+                textAlign: "right"
+              }}
+              className="ml-auto"
+              
+            >
+              Login
+            </NavLink>
+      <NavLink
+              as={RouterNavLink}
+              to="/register"
+              exact
+              activeClassName="router-link-exact-active"
+              style={{
+                width: "140px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px",
+                textAlign: "right",
+                marginLeft: "0"
+              }}
+              
+              
+            >
+              Sign Up
+            </NavLink>
+       
     </NavBar>
   );
 }
@@ -31,8 +65,6 @@ export default function Nav() {
 const NavBar = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   background: ${(props) => props.theme.navColor};
   min-height: 50px;
   font-size: 1.2rem;
@@ -43,8 +75,6 @@ const NavBar = styled.div`
 
 const NavMenu = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
 `;
 
 const NavLink = styled.div`

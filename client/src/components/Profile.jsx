@@ -26,8 +26,7 @@ class Profile extends Component {
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
-                You are logged into your{" "}
-                <span style={{ fontFamily: "monospace" }}>Profile!</span>
+                You are logged in!
               </p>
             </h4>
             <button
