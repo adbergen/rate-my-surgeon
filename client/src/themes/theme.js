@@ -20,7 +20,7 @@ const light = {
 const dark = {
   id: "dark",
   ...base,
-  backgroundColor: "#333",
+  backgroundColor: "white",
   textColor: "black",
   navColor: "#000",
   buttonBackgroundColor: "blue",

@@ -2,15 +2,23 @@ import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import styled from "styled-components";
 import SearchBar from "./SearchBar"
+import Background from "../assets/surgeonbackground.png"
 
 export default function Landing() {
   return (
-    <div
-      style={{ height: "75vh", backgroundColor: "rgba(255, 0, 0, 0.5)" }}
-      className="container valign-wrapper"
-    >
+    <>
       <SearchBar />
+      <img
+           className="container valign-wrapper"     
+                style={{
+                  width: "50%",
+                  borderWidth: 1,
+                  borderColor: "black",
+                  justifyContent: "center"
+                }}
+                src={Background}
+              />
       
-    </div>
+    </>
   );
 }
