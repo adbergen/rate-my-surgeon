@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-import PostForm from "./PostForm"
+import SearchBar from "./SearchBar"
 
 import styled from "styled-components";
 import Sidebar from "./Sidebar.jsx";
@@ -19,7 +19,7 @@ class Profile extends Component {
     return (
       <>
       <Sidebar />
-      <PostForm />
+      <SearchBar />
       <div style={{ height: "75vh" }} className="container">
         <div className="row" style={{ width: "61vh", padding: "25px" }}>
           <Greeting className="col s12 center-align">
